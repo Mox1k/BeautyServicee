@@ -13,28 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BeautyServicee
+namespace BeautyServicee.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ServicesListPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ServicesListPage : Page
     {
-        public MainWindow()
+        public ServicesListPage()
         {
             InitializeComponent();
-        }
-
-        private void AddService(object sender, RoutedEventArgs e)
-        {
-            MainFrame.NavigationService.Navigate(new Pages.AddServicePage());
-
-        }
-
-        private void ServicesList(object sender, RoutedEventArgs e)
-        {
-            MainFrame.NavigationService.Navigate(new Pages.ServicesListPage());
-
         }
     }
 }
