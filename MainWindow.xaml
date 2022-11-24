@@ -20,12 +20,13 @@
             <TextBlock VerticalAlignment="Center" FontFamily="Tahoma" FontSize="20" FontWeight="Bold"  Foreground="#ff4a6d" >Beauty Servicee</TextBlock>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Right">
-            <Button Command="{Binding GoToServicesListPage}" Style="{StaticResource ResourceKey=NavButton}">Услуги</Button>
-            <Button Command="{Binding GoToAddServicePage}" Style="{StaticResource ResourceKey=NavButton}">Добавить услугу</Button>
+            <Button Command="{Binding GoToServicesListPage}" Style="{StaticResource ResourceKey=NavButton}" Click="ServicesList">Услуги</Button>
+            <Button Command="{Binding GoToAddServicePage}" Style="{StaticResource ResourceKey=NavButton}" Click="AddService">Добавить услугу</Button>
             <Button Command="{Binding GoToAddClientToServicePage}" Style="{StaticResource ResourceKey=NavButton}">Запись клиента</Button>
             <Button Command="{Binding GoToOrdersListPage}" Style="{StaticResource ResourceKey=NavButton}">Ближайшие записи</Button>
         </StackPanel>
-        <Frame Grid.Row="1">
+
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row="1">
             
         </Frame>
     </Grid>
