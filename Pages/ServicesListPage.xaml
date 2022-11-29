@@ -48,7 +48,7 @@
                 <TextBox Width="500px"></TextBox>
             </StackPanel>
         </StackPanel>
-        <ListBox  HorizontalAlignment="Stretch" ItemsSource="{Binding Services}" Grid.Row="2" Grid.Column="1">
+        <ListBox x:Name="Spisok" HorizontalAlignment="Stretch" ItemsSource="{Binding Services}" Grid.Row="2" Grid.Column="1">
             <ListBox.ItemContainerStyle>
                 <Style TargetType="ListBoxItem">
                     <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
