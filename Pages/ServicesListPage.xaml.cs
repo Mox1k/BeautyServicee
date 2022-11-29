@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BeautyServicee.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,10 @@ namespace BeautyServicee.Pages
         public ServicesListPage()
         {
             InitializeComponent();
+
+            Spisok.ItemsSource = ApplicationDbContext.GetContext().Service.ToList();
+
+            Spisok.Items.Refresh();
         }
     }
 }
